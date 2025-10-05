@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulir Pendaftaran Mahasiswa Baru</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>Formulir Pendaftaran Mahasiswa Baru</h1>
+        <p>Silakan isi data berikut dengan benar untuk mendaftar di Universitas Teknologi Nusantara.</p>
+        <img src="https://images.unsplash.com/photo-1568792923760-d70635a89fdc?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+            alt="Gambar Kampus Universitas">
+    </header>
+
+    <main>
+        <form action="/proses-pendaftaran" method="post">
+            <fieldset>
+                <legend>Data Diri Calon Mahasiswa</legend>
+                <p>
+                    <label for="nama_lengkap">Nama Lengkap:</label><br>
+                    <input type="text" id="nama_lengkap" name="nama_lengkap" required>
+                </p>
+                <p>
+                    <label for="email">Email:</label><br>
+                    <input type="email" id="email" name="email" required>
+                </p>
+                <p>
+                    <label for="kata_sandi">Kata Sandi:</label><br>
+                    <input type="password" id="kata_sandi" name="kata_sandi" required>
+                </p>
+                <p>
+                    <label>Jenis Kelamin:</label><br>
+                    <input type="radio" id="laki_laki" name="jenis_kelamin" value="Laki-laki" required>
+                    <label for="laki_laki">Laki-laki</label><br>
+                    <input type="radio" id="perempuan" name="jenis_kelamin" value="Perempuan">
+                    <label for="perempuan">Perempuan</label>
+                </p>
+                <p>
+                    <label>Hobi:</label><br>
+                    <input type="checkbox" id="hobi_olahraga" name="hobi[]" value="Olahraga">
+                    <label for="hobi_olahraga">Olahraga</label><br>
+                    <input type="checkbox" id="hobi_membaca" name="hobi[]" value="Membaca">
+                    <label for="hobi_membaca">Membaca</label><br>
+                    <input type="checkbox" id="hobi_musik" name="hobi[]" value="Musik">
+                    <label for="hobi_musik">Musik</label><br>
+                    <input type="checkbox" id="hobi_gaming" name="hobi[]" value="Gaming">
+                    <label for="hobi_gaming">Gaming</label>
+                </p>
+                <p>
+                    <label for="jurusan">Pilihan Jurusan:</label><br>
+                    <select id="jurusan" name="jurusan" required>
+                        <option value="">--Pilih Jurusan--</option>
+                        <option value="Teknik Informatika">Teknik Informatika</option>
+                        <option value="Sistem Informasi">Sistem Informasi</option>
+                        <option value="Teknik Elektro">Teknik Elektro</option>
+                    </select>
+                </p>
+            </fieldset>
+            <br>
+            <button type="submit">Daftar Sekarang</button>
+        </form>
+    </main>
+
+    <footer>
+        <p>&copy;2024 Universitas Teknologi Nusantara</p>
+    </footer>
+
+</body>
+
+</html>
